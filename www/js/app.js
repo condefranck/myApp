@@ -27,7 +27,7 @@ angular.module('starter', ['ionic'])
 *  CONFIG UI-ROUTER
 **/
 
-.config(function($stateProvider, $urlRouterProvider) {
+.config(function($stateProvider, $urlRouterProvider, $ionicConfigProvider) {
 
   $stateProvider
     .state('tabs',{
@@ -77,6 +77,8 @@ angular.module('starter', ['ionic'])
     })
 
  $urlRouterProvider.otherwise('/tab/home');
+
+ //$ionicConfigProvider.tabs.position('bottom');
 
 })
 
